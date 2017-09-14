@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TextView.h"
 @interface ViewController ()
 
 @end
@@ -16,14 +16,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+    TextView * textView=[[TextView alloc]initWithFrame:self.view.bounds];
+    textView.backgroundColor=[UIColor grayColor];
+    [self.view addSubview:textView];
+}
+//创建一个五边形
+-(void)oneText{
+    
+    UIColor * color=[UIColor redColor];
+    
+    UIBezierPath * path=[UIBezierPath bezierPath];
+    path.lineWidth=5.0;
+    path.lineCapStyle=kCGLineCapRound;//线条处理
+    path.lineJoinStyle=kCGLineCapRound;//终点处理
+    
+    [path moveToPoint:CGPointMake(100.0, 0)];
+    
+    [path addLineToPoint:CGPointMake(200.0, 40.0)];
+    [path addLineToPoint:CGPointMake(160.0, 140.0)];
+    [path addLineToPoint:CGPointMake(40.0, 140.0)];
+    [path addLineToPoint:CGPointMake(0.0, 40.0)];
+    
+    [path closePath];
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)twoText{
+   
 }
-
-
 @end

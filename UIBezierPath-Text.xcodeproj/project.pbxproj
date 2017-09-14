@@ -15,6 +15,8 @@
 		181DC8461F63DEDE00878ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DC8441F63DEDE00878ABB /* LaunchScreen.storyboard */; };
 		181DC8511F63DEDE00878ABB /* UIBezierPath_TextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DC8501F63DEDE00878ABB /* UIBezierPath_TextTests.m */; };
 		181DC85C1F63DEDE00878ABB /* UIBezierPath_TextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DC85B1F63DEDE00878ABB /* UIBezierPath_TextUITests.m */; };
+		184477CA1F69718E00D20778 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184477C91F69718E00D20778 /* TextView.m */; };
+		184477CD1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 184477CC1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		181DC8571F63DEDE00878ABB /* UIBezierPath-TextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIBezierPath-TextUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DC85B1F63DEDE00878ABB /* UIBezierPath_TextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPath_TextUITests.m; sourceTree = "<group>"; };
 		181DC85D1F63DEDE00878ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184477C81F69718E00D20778 /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		184477C91F69718E00D20778 /* TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		184477CB1F69810000D20778 /* CAShapeLayerAndUIBzerPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerAndUIBzerPath.h; sourceTree = "<group>"; };
+		184477CC1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerAndUIBzerPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				181DC83A1F63DEDE00878ABB /* AppDelegate.m */,
 				181DC83C1F63DEDE00878ABB /* ViewController.h */,
 				181DC83D1F63DEDE00878ABB /* ViewController.m */,
+				184477C81F69718E00D20778 /* TextView.h */,
+				184477C91F69718E00D20778 /* TextView.m */,
+				184477CB1F69810000D20778 /* CAShapeLayerAndUIBzerPath.h */,
+				184477CC1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m */,
 				181DC83F1F63DEDE00878ABB /* Main.storyboard */,
 				181DC8421F63DEDE00878ABB /* Assets.xcassets */,
 				181DC8441F63DEDE00878ABB /* LaunchScreen.storyboard */,
@@ -276,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184477CD1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m in Sources */,
 				181DC83E1F63DEDE00878ABB /* ViewController.m in Sources */,
+				184477CA1F69718E00D20778 /* TextView.m in Sources */,
 				181DC83B1F63DEDE00878ABB /* AppDelegate.m in Sources */,
 				181DC8381F63DEDE00878ABB /* main.m in Sources */,
 			);
@@ -518,6 +530,7 @@
 				181DC8621F63DEDE00878ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181DC8631F63DEDE00878ABB /* Build configuration list for PBXNativeTarget "UIBezierPath-TextTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +539,7 @@
 				181DC8651F63DEDE00878ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181DC8661F63DEDE00878ABB /* Build configuration list for PBXNativeTarget "UIBezierPath-TextUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +548,7 @@
 				181DC8681F63DEDE00878ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
