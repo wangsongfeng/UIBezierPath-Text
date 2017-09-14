@@ -23,6 +23,26 @@
     [self textFour];
 
 }
+
+//创建一个五边形
+-(void)oneText{
+    
+    UIBezierPath * path=[UIBezierPath bezierPath];
+    path.lineWidth=5.0;
+    path.lineCapStyle=kCGLineCapRound;//线条处理
+    path.lineJoinStyle=kCGLineCapRound;//终点处理
+    
+    [path moveToPoint:CGPointMake(100.0, 0)];
+    
+    [path addLineToPoint:CGPointMake(200.0, 40.0)];
+    [path addLineToPoint:CGPointMake(160.0, 140.0)];
+    [path addLineToPoint:CGPointMake(40.0, 140.0)];
+    [path addLineToPoint:CGPointMake(0.0, 40.0)];
+    
+    [path closePath];
+    
+}
+
 //今日头条 刷新 动画图片
 -(void)textOne{
     CGAffineTransform transform = CGAffineTransformMakeTranslation((self.bounds.size.width-50*5)/2, 100);
