@@ -57,7 +57,6 @@
     }
 }
 
-
 //贝塞尔曲线 1
 -(UIBezierPath*)getStart1Path{
     UIBezierPath * path=[UIBezierPath bezierPath];
@@ -75,7 +74,6 @@
     
     return path;
 }
-
 
 //贝塞尔曲线 2
 -(UIBezierPath*)getStart2Path{

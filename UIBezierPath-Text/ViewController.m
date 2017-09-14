@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TextView.h"
 #import "CAShapeLayerAndUIBzerPath.h"
+#import "ThreeView.h"
 @interface ViewController ()
 
 @end
@@ -26,8 +27,11 @@
     CAShapeLayerAndUIBzerPath * view=[[CAShapeLayerAndUIBzerPath alloc]initWithFrame:self.view.bounds];
 //    [self.view addSubview:view];
     
+    ThreeView * threeView=[[ThreeView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:threeView];
+    
 //    [self twoText];
-    [self oneText];
+//    [self oneText];
 }
 -(void)oneText{
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];   //创建CALayer对象
@@ -41,6 +45,11 @@
     
     shapeLayer.fillColor = [UIColor redColor].CGColor;  //设置填充颜色
     shapeLayer.backgroundColor = [UIColor greenColor].CGColor;  //设置背景颜色
+    
+    shapeLayer.borderWidth = 4;                          //设置边框宽度
+    shapeLayer.borderColor = [UIColor blueColor].CGColor; //设置边框颜色
+    shapeLayer.cornerRadius = 13;             //设置圆角
+    shapeLayer.masksToBounds = true;          //将超出主图层范围的内容切掉  在UIView里这一属性对应的方法是clipsToBounds
     [self.view.layer addSublayer:shapeLayer];  //将主图层添加到视图图层上去并显示出来
 
 }
