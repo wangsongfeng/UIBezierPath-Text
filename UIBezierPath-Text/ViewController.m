@@ -27,7 +27,7 @@
     CAShapeLayerAndUIBzerPath * view=[[CAShapeLayerAndUIBzerPath alloc]initWithFrame:self.view.bounds];
 //    [self.view addSubview:view];
     
-    ThreeView * threeView=[[ThreeView alloc]initWithFrame:self.view.bounds];
+    ThreeView * threeView=[[ThreeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.height-100)];
     [self.view addSubview:threeView];
     
 //    [self twoText];

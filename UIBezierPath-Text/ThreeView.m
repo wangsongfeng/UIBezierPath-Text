@@ -50,7 +50,7 @@
     
     CGFloat arcCenterX = self.frame.size.width/2;
     CGFloat arcCenterY = 80;
-    CGFloat delay = 3;
+    CGFloat delay = 1;
     
     //头
     CAShapeLayer *headLayer = [CAShapeLayer layer];
