@@ -10,6 +10,7 @@
 #import "TextView.h"
 #import "CAShapeLayerAndUIBzerPath.h"
 #import "ThreeView.h"
+#import "YouKuPlayButton.h"
 @interface ViewController ()
 
 @end
@@ -32,6 +33,9 @@
     
 //    [self twoText];
 //    [self oneText];
+    
+    YouKuPlayButton * button=[[YouKuPlayButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2-30, self.view.frame.size.height/2-30, 60, 60) state:YouKuPlayButtonStatePause];
+    [self.view addSubview:button];
 }
 -(void)oneText{
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];   //创建CALayer对象

@@ -18,6 +18,7 @@
 		184477CA1F69718E00D20778 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184477C91F69718E00D20778 /* TextView.m */; };
 		184477CD1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 184477CC1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m */; };
 		18B4277D1F6ACE6200D7058C /* ThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4277C1F6ACE6200D7058C /* ThreeView.m */; };
+		18E1F1951F77E7C400AA4A58 /* YouKuPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1F1941F77E7C400AA4A58 /* YouKuPlayButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		184477CC1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerAndUIBzerPath.m; sourceTree = "<group>"; };
 		18B4277B1F6ACE6200D7058C /* ThreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeView.h; sourceTree = "<group>"; };
 		18B4277C1F6ACE6200D7058C /* ThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeView.m; sourceTree = "<group>"; };
+		18E1F1931F77E7C400AA4A58 /* YouKuPlayButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouKuPlayButton.h; sourceTree = "<group>"; };
+		18E1F1941F77E7C400AA4A58 /* YouKuPlayButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouKuPlayButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				184477CC1F69810000D20778 /* CAShapeLayerAndUIBzerPath.m */,
 				18B4277B1F6ACE6200D7058C /* ThreeView.h */,
 				18B4277C1F6ACE6200D7058C /* ThreeView.m */,
+				18E1F1931F77E7C400AA4A58 /* YouKuPlayButton.h */,
+				18E1F1941F77E7C400AA4A58 /* YouKuPlayButton.m */,
 				181DC83F1F63DEDE00878ABB /* Main.storyboard */,
 				181DC8421F63DEDE00878ABB /* Assets.xcassets */,
 				181DC8441F63DEDE00878ABB /* LaunchScreen.storyboard */,
@@ -295,6 +300,7 @@
 				181DC83E1F63DEDE00878ABB /* ViewController.m in Sources */,
 				184477CA1F69718E00D20778 /* TextView.m in Sources */,
 				181DC83B1F63DEDE00878ABB /* AppDelegate.m in Sources */,
+				18E1F1951F77E7C400AA4A58 /* YouKuPlayButton.m in Sources */,
 				181DC8381F63DEDE00878ABB /* main.m in Sources */,
 				18B4277D1F6ACE6200D7058C /* ThreeView.m in Sources */,
 			);
