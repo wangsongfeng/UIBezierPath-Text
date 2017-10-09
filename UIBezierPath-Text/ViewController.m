@@ -12,20 +12,19 @@
 #import "ThreeView.h"
 #import "YouKuPlayButton.h"
 @interface ViewController ()
-
+@property(nonatomic,strong)YouKuPlayButton * youkuBtn;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
     TextView * textView=[[TextView alloc]initWithFrame:self.view.bounds];
     textView.backgroundColor=[UIColor grayColor];
 //    [self.view addSubview:textView];
     
-    CAShapeLayerAndUIBzerPath * view=[[CAShapeLayerAndUIBzerPath alloc]initWithFrame:self.view.bounds];
+//    CAShapeLayerAndUIBzerPath * view=[[CAShapeLayerAndUIBzerPath alloc]initWithFrame:self.view.bounds];
 //    [self.view addSubview:view];
     
     ThreeView * threeView=[[ThreeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.height-100)];
@@ -34,9 +33,26 @@
 //    [self twoText];
 //    [self oneText];
     
-    YouKuPlayButton * button=[[YouKuPlayButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2-30, self.view.frame.size.height/2-30, 60, 60) state:YouKuPlayButtonStatePause];
+    YouKuPlayButton * button=[[YouKuPlayButton alloc]initWithFrame:CGRectMake(0, 0, 60, 60) state:YouKuPlayButtonStatePlay];
+    button.center=CGPointMake(self.view.center.x, self.view.center.y);
+    [button addTarget:self action:@selector(youkuBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    self.youkuBtn=button;
+    
+//    [self threeText];
+    
 }
+
+-(void)youkuBtnClick{
+    if (self.youkuBtn.buttonState == YouKuPlayButtonStatePause) {
+        self.youkuBtn.buttonState = YouKuPlayButtonStatePlay;
+    }else {
+        self.youkuBtn.buttonState = YouKuPlayButtonStatePause;
+    }
+}
+
+
 -(void)oneText{
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];   //创建CALayer对象
     shapeLayer.frame = CGRectMake(0, 0, 200, 200);   //设置frame
@@ -86,5 +102,34 @@
     
     [self.view.layer addSublayer:shapeLayer];  //将主图层添加到视图图层上去并显示出来
  
+}
+
+-(void)threeText{
+   
+//    layer.frame=CGRectMake(100, 100, 100, 50);
+//    layer.name = @"Radius";
+    CGFloat lineWidth =  10;
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    path.lineWidth = lineWidth;
+    path.lineCapStyle = kCGLineCapButt;
+  
+    CGPoint center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+    CGFloat radius = (self.view.frame.size.width - lineWidth)/2;
+    
+    CGFloat startAngle = -((float)M_PI)/2; //
+    CGFloat endAngle = ((float)M_PI)-startAngle ;
+    
+    [path addArcWithCenter:center radius:radius startAngle:startAngle endAngle:endAngle clockwise:NO];
+    
+    
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.path=path.CGPath;
+    //设置边框颜色
+    layer.strokeColor = [UIColor blackColor].CGColor;
+    layer.borderWidth=10;
+    layer.fillColor = [UIColor clearColor].CGColor;
+
+    
+    [self.view.layer addSublayer:layer];
 }
 @end
